@@ -17,6 +17,10 @@ body {
     align-items: center;
     padding: 70px 10% 0;
 }
+@media only screen and (max-width: 600px) {
+    body {
+        background-size: cover;
+        background-attachment: fixed;
 .home-content{
     max-width: 600px;
 }
