@@ -17,16 +17,49 @@ body {
     align-items: center;
     padding: 70px 10% 0;
 }
-@media only screen and (max-width: 600px) {
-    body {
-        background-size: cover;
-        background-attachment: fixed;
-.home-content{
-    max-width: 600px;
+/* Mobile view */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        text-align: left;
+        padding: 10px;
+    }
+
+    header, footer {
+        text-align: center;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    article {
+        flex: 1 1 100%;
+    }
 }
-.home-content h3 {
-    font-size: 32px;
-    font-weight: 700;
+
+/* Desktop view */
+@media (min-width: 601px) {
+    nav {
+        flex-direction: row;
+    }
+
+    nav a {
+        padding: 14px 20px;
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+    article {
+        flex: 1 1 300px;
+    }
+
+
 }
 .home-content h1{
     font-size: 56px;
